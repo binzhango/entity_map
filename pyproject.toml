@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "entity-map"
+version = "0.3.0"
+description = "A modern local explorer for legacy-to-current database field mappings"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "Bin Zhang" }]
+dependencies = [
+  "fastapi>=0.116,<1",
+  "openpyxl>=3.1,<4",
+  "pandas>=2.2,<4",
+  "python-multipart>=0.0.20,<1",
+  "uvicorn[standard]>=0.34,<1",
+]
+
+[project.optional-dependencies]
+dev = ["httpx>=0.28,<1", "pytest>=8,<10"]
+
+[project.scripts]
+entity-map = "entity_map.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+entity_map = ["static/**/*"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

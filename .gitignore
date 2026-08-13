@@ -216,3 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Frontend dependencies and TypeScript build cache
+frontend/node_modules/
+frontend/*.tsbuildinfo
+
+# Local Entity Map catalog overrides and test artifacts
+.entity-map/
+.test-catalog.db*
+.uv-cache/
+
+# macOS metadata
+.DS_Store

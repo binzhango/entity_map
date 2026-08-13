@@ -1,0 +1,3 @@
+Legacy Database,Legacy Schema,Legacy Table,Legacy Column,Legacy Description,Legacy Data Type,Current Database,Current Schema,Current Table,Current Column,Current Description,Current Data Type
+old_db,public,CLIENT,CLIENT_ID,Old identifier,INTEGER,new_db,core,CUSTOMER,ID,Primary key,BIGINT
+old_db,public,CLIENT,CLIENT_NAME,Client name,VARCHAR,,,,,,

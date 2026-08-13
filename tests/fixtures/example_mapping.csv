@@ -1,0 +1,5 @@
+Legacy Table,Legacy Column,Legacy Description,Current Table,Current Column,Current Description
+CLIENT,CLINETN_ID,Unique client identifier,CUSTOMER,ID,Primary key of the customer
+CLIENT,CLIENT_NAME,Full name of the client,CUSTOMER,FULL_NAME,Customer full name
+TRANS,TRAN_AMT,Transaction amount in local currency,TRANSACTION,AMOUNT,Monetary value of the transaction
+TRANS,TRAN_DT,Date of the transaction,TRANSACTION,TX_DATE,Transaction date
